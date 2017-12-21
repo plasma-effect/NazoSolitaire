@@ -1,0 +1,1 @@
+# NazoSolitaire
