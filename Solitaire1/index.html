@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="game.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <img id="field" class="card" src="../CommonImage/BlankCard.png" onclick="field_click_action.run();"><br>
+    <img id="deck" src="../CommonImage/cardgame_deck.png" class="card">
+    <canvas height="200" width="1000" id="grave"></canvas><br>
+    <img id="reveal0" class="reveal" onclick="reveal_click_action[0].run();">
+    <img id="reveal1" class="reveal" onclick="reveal_click_action[1].run();">
+    <img id="reveal2" class="reveal" onclick="reveal_click_action[2].run();">
+    <img id="reveal3" class="reveal" onclick="reveal_click_action[3].run();">
+    <img id="reveal4" class="reveal" onclick="reveal_click_action[4].run();"><br>
+    <img id="card0" class="card" onclick="card_click_action[0].run()">
+    <img id="card1" class="card" onclick="card_click_action[1].run()">
+    <img id="card2" class="card" onclick="card_click_action[2].run()">
+    <img id="card3" class="card" onclick="card_click_action[3].run()">
+    <img id="card4" class="card" onclick="card_click_action[4].run()">
+    <img id="card5" class="card" onclick="card_click_action[5].run()">
+    <img id="card6" class="card" onclick="card_click_action[6].run()"><br>
+    <button onclick="reset()">リセット</button><br>
+    <p>
+        ルール<br>
+        次の二つのアクションを駆使して場にキングのカードを出すと勝ちです。
+    </p>
+    <p>
+        アクション1<br>
+        場にあるカードより1大きいカードを場に出します(1枚もない時は1を出す)。<br>
+        その後手札を全て山に混ぜランダムにカードを7枚手札にします。
+    </p>
+    <p>
+        アクション2<br>
+        同じスートのカードを2枚捨てて山からランダムに5枚選びます。<br>
+        その5枚のうち1枚を手札に加え残りを山に戻します。
+    </p>
+    よくある質問<br>
+    <p>
+        ・難しすぎる<br>
+        頑張って欲しい(無責任)
+    </p>
+    <p>
+        ・簡単すぎる<br>
+        1分で考えたようなルールだからなぁ<br>
+    </p>
+    <p>
+        ・バグを見つけた<br>
+        Issueを投げてほしい、プルリクでもいいぞ
+    </p>
+</html>

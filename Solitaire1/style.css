@@ -1,0 +1,22 @@
+body{
+    user-select: none;
+    overflow-y: scroll;
+}
+
+img.card{
+    height: 200px;
+    width: auto;
+}
+
+img.card.nonselect{
+    filter: brightness(20%);
+}
+
+img.card.selected{
+    border: 2px solid red
+}
+
+img.reveal{
+    height: 100px;
+    width: auto;
+}
